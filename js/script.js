@@ -13,7 +13,7 @@ function addElement (){
         label.textContent = newTaskInput.value.trim();
 
         const deleteImage = document.createElement('img');
-        deleteImage.src = deleteImage.src = "/todolist/assets/delete.png"; 
+        deleteImage.src = deleteImage.src = "https://cdn-icons-png.flaticon.com/512/1175/1175088.png"; 
         deleteImage.classList.add('delete-btn-image');
         deleteImage.addEventListener('click', (e) => {
             e.stopPropagation()
