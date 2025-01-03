@@ -25,7 +25,7 @@ function addElement (){
         newLi.append(deleteImage);
 
         listTask.append(newLi);
-        newTaskInput.value = '';
+        newTaskInput.value = '';  
     })
 }
 
