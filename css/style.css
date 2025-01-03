@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Orbitron:wght@400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background: rgb(144,136,136);
+    background: linear-gradient(90deg, rgba(144,136,136,1) 0%, rgba(72,108,121,1) 48%, rgba(7,48,69,1) 100%);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -5px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(218, 218, 218);
+}
+
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.task-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    background-color:  rgb(218, 218, 218);
+    color:  rgb(85, 85, 85);;
+    border-radius: 4px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6394a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-input button:hover {
+    background-color: #2d4a55;
+}
+
+.task {
+    width: 33%;
+}
+
+/* liste des taches */
+ul.listTask {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.listTask li {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #949494;
+    background-color:  rgb(218, 218, 218);
+    color:  rgb(85, 85, 85);;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ul.listTask li span {
+    font-size: 20px;
+    flex: 1; 
+    max-width: calc(100% - 50px); 
+    overflow: hidden; 
+    white-space: wrap; 
+}
+
+ul.listTask li input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+
+ul.listTask li input{
+    width: 20px;
+}
+
+.delete-btn-image {    
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.delete-btn-image:hover {
+    opacity: 0.5;
+}
