@@ -13,7 +13,7 @@ function addElement (){
         label.textContent = newTaskInput.value.trim();
 
         const deleteImage = document.createElement('img');
-        deleteImage.src = "https://devbymatheo.github.io/todolist/assets/delete.png"; 
+        deleteImage.src = deleteImage.src = "/todolist/assets/delete.png"; 
         deleteImage.classList.add('delete-btn-image');
         deleteImage.addEventListener('click', (e) => {
             e.stopPropagation()
